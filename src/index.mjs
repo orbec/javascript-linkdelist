@@ -1,0 +1,43 @@
+import LinkedList from "./LinkedList.mjs";
+
+const linkedList = new LinkedList();
+
+console.log(linkedList.toString());
+linkedList.append("dog");
+console.log(linkedList.toString());
+linkedList.insertAt("1", 0);
+console.log(linkedList.toString());
+linkedList.append("cat");
+console.log(linkedList.toString());
+linkedList.insertAt("2", 1);
+console.log(linkedList.toString());
+linkedList.append("parrot");
+console.log(linkedList.toString());
+linkedList.insertAt("3", 2);
+console.log(linkedList.toString());
+linkedList.append("hamster");
+console.log(linkedList.toString());
+linkedList.removeAt(2);
+console.log(linkedList.toString());
+linkedList.append("snake");
+console.log(linkedList.toString());
+linkedList.removeAt(2);
+console.log(linkedList.toString());
+linkedList.append("turtle");
+console.log(linkedList.toString());
+linkedList.removeAt(2);
+console.log(linkedList.toString());
+
+linkedList.pop();
+console.log(linkedList.find("hamster"));
+linkedList.pop();
+console.log(linkedList.find("hamster"));
+linkedList.pop();
+console.log(linkedList.find("hamster"));
+linkedList.pop();
+console.log(linkedList.find("hamster"));
+linkedList.pop();
+console.log(linkedList.find("hamster"));
+linkedList.pop();
+console.log(linkedList.find("hamster"));
+console.log(linkedList.toString());
